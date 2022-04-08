@@ -1,0 +1,13 @@
+﻿<Window x:Class="rezerwacjaSalwBudynkach_GUI.WyborWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:rezerwacjaSalwBudynkach_GUI"
+        mc:Ignorable="d"
+        Title="Pracownik czy student" Height="200" Width="700">
+    <Grid>
+        <Button x:Name="btnPracownik" Content="Dodaj pracownika" HorizontalAlignment="Left" Height="105" Margin="45,30,0,0" VerticalAlignment="Top" Width="280" FontSize="16" Click="BtnPracownik_Click"/>
+        <Button x:Name="btnStudent" Content="Dodaj studenta" HorizontalAlignment="Left" Height="105" Margin="365,30,0,0" VerticalAlignment="Top" Width="280" FontSize="16" Click="BtnStudent_Click"/>
+    </Grid>
+</Window>

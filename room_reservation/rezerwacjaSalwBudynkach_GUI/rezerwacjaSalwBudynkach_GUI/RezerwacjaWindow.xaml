@@ -1,0 +1,30 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:rezerwacjaSalwBudynkach_GUI"
+        xmlns:rezerwacjaSalwBudynkach="clr-namespace:rezerwacjaSalwBudynkach;assembly=rezerwacjaSalwBudynkach" x:Class="rezerwacjaSalwBudynkach_GUI.RezerwacjaWindow1"
+        mc:Ignorable="d"
+        Title="rezerwacja" Height="420" Width="560">
+    <Grid Margin="0,2,0,-2">
+        <Label Content="Sala" HorizontalAlignment="Left" Height="29" Margin="39,142,0,0" VerticalAlignment="Top" Width="133" FontSize="16" HorizontalContentAlignment="Right"/>
+        <Label Content="Godzina końcowa" HorizontalAlignment="Left" Height="29" Margin="17,97,0,0" VerticalAlignment="Top" Width="155" FontSize="16" HorizontalContentAlignment="Right"/>
+        <Label Content="Godzina początkowa" HorizontalAlignment="Left" Height="29" Margin="17,52,0,0" VerticalAlignment="Top" Width="155" FontSize="16" HorizontalContentAlignment="Right"/>
+        <Label Content="Data" HorizontalAlignment="Left" Height="29" Margin="39,7,0,0" VerticalAlignment="Top" Width="133" FontSize="16" HorizontalContentAlignment="Right"/>
+        <DatePicker x:Name="sdData" HorizontalAlignment="Left" Height="29" Margin="202,7,0,0" VerticalAlignment="Top" Width="275"/>
+        <TextBox x:Name="txtGodzinaPoczatkowa" HorizontalAlignment="Left" Height="29" Margin="202,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275"/>
+        <TextBox x:Name="txtGodzinaKoncowa" HorizontalAlignment="Left" Height="29" Margin="202,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275"/>
+        <Label Content="Osoba" HorizontalAlignment="Left" Height="29" Margin="39,186,0,0" VerticalAlignment="Top" Width="133" FontSize="16" HorizontalContentAlignment="Right"/>
+        <ComboBox x:Name="cmbSale" HorizontalAlignment="Left" Height="29" Margin="202,142,0,0" VerticalAlignment="Top" Width="275" RenderTransformOrigin="0.509,0.483"/>
+        <ComboBox x:Name="cmbOsoby" HorizontalAlignment="Left" Height="29" Margin="202,186,0,0" VerticalAlignment="Top" Width="275" RenderTransformOrigin="0.509,0.483"/>
+        <Button x:Name="btnZatwierdz" Content="Rezerwuj" HorizontalAlignment="Left" Height="39" Margin="280,315,0,0" VerticalAlignment="Top" Width="210" FontSize="16" Click="BtnZatwierdz_Click"/>
+        <Button x:Name="btnAnuluj" Content="Anuluj" HorizontalAlignment="Left" Height="39" Margin="65,315,0,0" VerticalAlignment="Top" Width="210" FontSize="16" Click="BtnAnuluj_Click"/>
+        <Label Content="Ile razy" HorizontalAlignment="Left" Height="29" Margin="47,266,0,0" VerticalAlignment="Top" Width="125" FontSize="16" HorizontalContentAlignment="Right"/>
+        <TextBox x:Name="txtIleRazy" HorizontalAlignment="Left" Height="29" Margin="202,266,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275"/>
+        <Label Content="Co ile dni" HorizontalAlignment="Left" Height="29" Margin="47,225,0,0" VerticalAlignment="Top" Width="125" FontSize="16" HorizontalContentAlignment="Right"/>
+        <TextBox x:Name="txtCoIleDni" HorizontalAlignment="Left" Height="29" Margin="202,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275"/>
+
+
+    </Grid>
+</Window>
