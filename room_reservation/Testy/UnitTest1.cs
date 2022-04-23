@@ -20,7 +20,7 @@ namespace TestyJednostkowe
         [TestMethod]
         public void StudentTest()
         {
-            Student s1 = new Student("405233", "Faustyna", "Bak", EnumWydzial.WZ);
+            Student s1 = new Student("40123", "Faustyna", "Bak", EnumWydzial.WIET);
             Assert.AreEqual(s1.Imie, "Faustyna"); 
         }
 
@@ -106,7 +106,7 @@ namespace TestyJednostkowe
         [ExpectedException(typeof(FormatException))]
         public void FormatExceptionTest()
         {
-            Student s1 = new Student("405233dopisek", "Faustyna", "Bak", EnumWydzial.WZ);
+            Student s1 = new Student("4051233dopisek", "Faustyna", "Bak", EnumWydzial.WiET);
         }
 
         [TestMethod]

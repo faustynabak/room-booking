@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 namespace rezerwacjaSalwBudynkach
 {
     [Serializable()]
-    public enum EnumWydzial {WZ, WIMIR, WINIP, WIP, WILiGZ, WH}
+    public enum EnumWydzial {WZ, WIMIR, WINIP, WIP, WILiGZ, WH, WIET}
 
     [Serializable()]
     public abstract class Osoba
